@@ -1,0 +1,76 @@
+.cell {
+  padding: 0 20px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.header {
+  padding: 15px 0;
+  vertical-align: top;
+}
+
+
+.logo {
+  font-size: 15px;
+  vertical-align: top;
+  padding: 0;
+  width: 160px;
+  float: left;
+}
+
+.logo img {
+  height: 50px;
+  display: block;
+  float: left;
+}
+
+.logo span {
+  display: block;
+  float: left;
+}
+
+.logo span {
+  margin-right: 5px;
+}
+
+.reestr {
+  font-size: 11px;
+  color: gray;
+  padding: 0 0 0 5px;
+  margin: 5px 0 0 5px;
+  border-left: 1px solid gray;
+  height: 40px;
+  width: 100px;
+  float: left;
+}
+
+.contact {
+  clear: both;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.telephone {
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.header .btn {
+  border-radius: 15px;
+  float: left;
+}
+
+.underline {
+  border-bottom: 2px solid #36aaec;
+}
+
+@media (min-width:544px) {
+  .contact {
+    clear: none;
+    margin-top: 0;
+    float: right;
+  }
+
+}
