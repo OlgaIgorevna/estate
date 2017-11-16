@@ -58,15 +58,161 @@
 }
 
 .header .btn {
-  border-radius: 15px;
   float: left;
 }
+
+.btn-group-sm > .btn,
+.btn-sm {
+  border-radius: 15px;
+}
+
 
 .underline {
   border-bottom: 2px solid #36aaec;
 }
 
-@media (min-width:544px) {
+/*---------------------------------*/
+
+.first {
+  background-image: url(../img/head.jpg);
+  background-size: cover;
+  min-height: 700px;
+
+  font-size: 20px;
+  color: white;
+}
+
+.first .container {
+  padding: 50px 15px;
+}
+
+.first h1 {
+  margin-bottom: 30px;
+}
+
+.first ul {
+  list-style: none;
+}
+
+.first li {
+
+  margin: 0;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.first li::after {
+  content: '';
+  height: .6em;
+  width: .6em;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: .55em;
+  left: 0;
+  border: 3px solid #36aaec;
+}
+
+input[type="text"],
+input[type="number"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #36aaec;
+  border-radius: 0;
+  max-width: 260px;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder {
+  color: white;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder {
+  color: white;
+}
+
+
+
+
+.first .btn {
+  margin-top: 20px;
+}
+
+
+/*-----------------*/
+
+.service .title {
+  text-align: center;
+}
+
+.service .col-6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.service .icon {
+  /*  float:left;*/
+  width: 70px;
+  margin: 0 auto;
+}
+
+.service .icon img {
+  width: 70px;
+}
+
+.service .info .btn {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 12px;
+}
+
+.info {
+  /*  float: left;*/
+  /*  margin-left: 15px;*/
+  margin: 0 auto;
+}
+
+.dropdown {
+  display: block;
+  padding: 0;
+}
+
+.service .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.service .icon {
+  width: 70px;
+}
+
+.service .col-6 {
+  text-align: center;
+}
+
+
+@media (min-width: 470px) {
+  .service .icon {
+    float: left;
+  }
+
+
+  .info {
+    float: left;
+    margin-left: 15px;
+  }
+
+  .service .col-6 {
+    text-align: left;
+  }
+
+
+}
+
+@media (min-width: 544px) {
   .contact {
     clear: none;
     margin-top: 0;
