@@ -115,7 +115,7 @@
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="tel"] {
   background: none;
   border: none;
   border-bottom: 2px solid #36aaec;
@@ -124,12 +124,12 @@ input[type="number"] {
 }
 
 input[type="text"]::-webkit-input-placeholder,
-input[type="number"]::-webkit-input-placeholder {
+input[type="tel"]::-webkit-input-placeholder {
   color: white;
 }
 
 input[type="text"]::-moz-placeholder,
-input[type="number"]::-moz-placeholder {
+input[type="tel"]::-moz-placeholder {
   color: white;
 }
 
@@ -167,6 +167,8 @@ input[type="number"]::-moz-placeholder {
   border: none;
   color: gray;
   font-size: 12px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .info {
@@ -193,6 +195,37 @@ input[type="number"]::-moz-placeholder {
   text-align: center;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
+input {
+  outline: none;
+  font-size: 13px;
+  width: 70%;
+  margin: 10px 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.col-12 h1 {
+  font-size: 35px;
+}
+
+.col-12 h4 {
+  font-size: 20px;
+}
+
+.first .col-12 {
+  font-size: 15px;
+}
+
+.first .container .consult {
+  float: right !important;
+  
+}
 
 @media (min-width: 470px) {
   .service .icon {

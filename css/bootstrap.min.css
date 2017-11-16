@@ -3507,7 +3507,7 @@ tbody.collapse.show {
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem rgba(0, 123, 255, .25)
+  0 0 0 1px #fff, 0 0 0 .2rem rgba(0, 123, 255, .25)
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
@@ -8647,5 +8647,6 @@ a.text-dark:hover {
 .invisible {
   visibility: hidden!important
 }
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */
