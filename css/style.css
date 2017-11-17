@@ -178,16 +178,19 @@ ul {
 
 /*-----------------*/
 
-
+.container.service {
+  
+  padding-top: 30px;
+}
 .service{
-  font-size: 14px;
+  font-size: 13px;
 }
 .service .title {
   text-align: center;
 }
 
-.service .mx-auto{
-  width: 170px;
+.service .item{
+  width: 100px;
 }
 
 
@@ -198,12 +201,12 @@ ul {
 
 .service .icon {
   /*  float:left;*/
-  width: 60px;
+  width: 55px;
   margin: 0 auto;
 }
 
 .service .icon img {
-  width: 60px;
+  width: 55px;
 }
 
 .service .info .btn {
@@ -342,16 +345,32 @@ input:focus::-webkit-input-placeholder {
     float: left;
   }
 
-
+.service .item{
+  width: 190px;
+}
+  
   .service .info {
     float: left;
-    margin-left: 15px;
+    margin-left: 10px;
   }
 
   .service .col-6 {
     text-align: left;
   }
 
+  .third .col-md-5 .content .item{
+    float:left;
+  }
+  
+  .third .col-md-5 .content{
+   width: 500px;
+    margin: 0 auto;
+  }
+  
+  .third .col-md-7 .content {
+    max-width: 542px;
+    margin: 0 auto;
+  }
 
 }
 
@@ -409,9 +428,22 @@ input:focus::-webkit-input-placeholder {
     max-height: 500px;
   }
   
+   .third .col-md-5 .content{
+   width: auto;     
+  }
+  
   .third .col-md-5 .content{
   float: right;
 }
+  
+    .third  .col-md-5 .content .item{
+   float: right;
+  }
+  
+   .third .col-md-7 .content{
+   
+    margin: 0;
+  }
   
   .third .man {
     display: block;
