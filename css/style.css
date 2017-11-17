@@ -68,6 +68,7 @@
 
 .btn-primary {
   background: #36aaec;
+  border-color: #36aaec;
 }
 
 .underline {
@@ -128,6 +129,13 @@ input[type="tel"] {
   color: white;
 }
 
+.third input[type="text"],
+.third input[type="tel"] {  
+  border-bottom-color: white;  
+}
+
+
+
 input[type="text"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder {
   color: white;
@@ -138,20 +146,20 @@ input[type="tel"]::-moz-placeholder {
   color: white;
 }
 
-.first .btn {
+.first .btn, .third .btn {
   margin-top: 20px;
 }
 
 
-.consult-wrap {
+.first .wrap-right {
   margin-top: 20px;
 }
 
-.consult-content {
+.first .wrap-left .content {
   max-width: 300px;
 }
 
-.consult-form {
+.first .wrap-right .content {
 
   border: 3px solid #36aaec;
   border-radius: 5px;
@@ -170,9 +178,18 @@ ul {
 
 /*-----------------*/
 
+
+.service{
+  font-size: 14px;
+}
 .service .title {
   text-align: center;
 }
+
+.service .mx-auto{
+  width: 170px;
+}
+
 
 .service .col-6 {
   padding-top: 10px;
@@ -181,12 +198,12 @@ ul {
 
 .service .icon {
   /*  float:left;*/
-  width: 70px;
+  width: 60px;
   margin: 0 auto;
 }
 
 .service .icon img {
-  width: 70px;
+  width: 60px;
 }
 
 .service .info .btn {
@@ -198,7 +215,7 @@ ul {
   padding-right: 0;
 }
 
-.info {
+.service .info {
   /*  float: left;*/
   /*  margin-left: 15px;*/
   margin: 0 auto;
@@ -214,9 +231,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.service .icon {
-  width: 70px;
-}
+
 
 .service .col-6 {
   text-align: center;
@@ -250,13 +265,85 @@ input:focus::-webkit-input-placeholder {
 }
 
 
+.third .btn-primary{
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+.third .wrap-right {
+  margin-top: 20px;
+}
+
+.third .wrap-right .content {
+
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 20px;
+
+}
+
+.third .col-md-7 {
+    background-image: url(../img/theatre.jpg);
+    background-size: cover;
+    padding-bottom: 50px;
+    color:white;
+  }
+
+.third .col-md-5 {
+    background: #f7f7f7;
+   color: black;
+  }
+
+.third .col-md-5 .content{
+  padding: 30px 40px 0 30px;  
+}
+
+.third .col-md-5 .content .item{
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+.third img {float: left;}
+
+
+
+
+.third .info {
+  display: block;
+  width: 150px;
+  float: left;
+  font-size: 10px;
+  color: darkgray;
+}
+
+.third .item {
+  margin: 10px 0;
+}
+
+.third .item img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.third .info .title {
+  font-size: 15px;
+  color: black;
+}
+
+
+/**/
+
+
+
+
 @media (min-width: 470px) {
   .service .icon {
     float: left;
   }
 
 
-  .info {
+  .service .info {
     float: left;
     margin-left: 15px;
   }
@@ -288,13 +375,13 @@ input:focus::-webkit-input-placeholder {
     padding: 50px 0 0;
   }
 
-  .consult-wrap {
+  .first .wrap-right {
     margin-top: 63px;
     padding: 0 0 0 60px;
 
   }
 
-  .consult-form {
+  .first .wrap-right .content {
 
     border: 3px solid #36aaec;
     border-radius: 5px;
@@ -303,7 +390,7 @@ input:focus::-webkit-input-placeholder {
 
   }
 
-  .consult-form-content {
+  .first .content-form {
     width: 200px;
     float: right;
   }
@@ -311,27 +398,108 @@ input:focus::-webkit-input-placeholder {
     font-size: 13px;
   }
 
-  .man {
+  .first .man {
     display: block;
     position: absolute;
     bottom: -75px;
     left: -80px;
   }
 
-  .man img {
+  .first .man img {
     max-height: 500px;
   }
+  
+  .third .col-md-5 .content{
+  float: right;
+}
+  
+  .third .man {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+  }
 
+  .third .man img {
+    max-height: 450px;
+  }
+ 
+  .third .wrap-right {
+    margin-top: 63px;
+    padding: 0 0 0 60px;
+  }
+
+  
+  .third .content-form {
+    width: 200px;
+    float: right;
+  }
+
+  .third .wrap-right .content {
+
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 50px 10px 30px 170px;
+    max-width: 450px;
+
+  }
+  .third .container {
+    padding: 50px 0 0;
+  }
+  .third {
+    min-height: 1px;
+    color: white;
+    height: 500px;
+  }
+
+  
+  
 }
 
 @media (min-width: 1140px) {
-  .consult-form-content {
+  .first .content-form {
     width: 250px;
   }
-  .col-12 h4{
+  .col-12 h4 {
     font-size: 20px;
   }
-   .man {
+  .first .man {
     bottom: -81px;
   }
+
+
+  .third .content-form {
+    width: 250px;
+  }
+  
+  
+  .third .col-md-5 .content{
+  padding-left: 10px; 
+    width: 400px;
+}
+  
+  .third .col-md-5 .content .item{
+  width: 300px;
+    margin: 10px 0;
+}
+  
+.third .info{
+ width: 250px;
+}
+
+.third .item img{
+  width: 35px;
+}
+
+.third .info {
+  font-size: 13px;
+}
+
+.third .info .title{
+  font-size: 20px;  
+}
+
+  
+  
+
 }
