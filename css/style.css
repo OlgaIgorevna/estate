@@ -378,6 +378,31 @@ input:focus::-webkit-input-placeholder {
   max-height: 350px;
 }
 
+.footer{
+  padding: 10px 0;
+  background-color: #323846;
+  color: white;
+  font-size: 10px;
+}
+.footer .info, .footer .email {
+  margin: 10px 0;
+   float: left; 
+}
+
+.footer .email{clear:both;}
+
+.footer .btn {
+  background: none; 
+  border-bottom: 1px solid #515662;
+  border-radius: 0;
+  padding: 0;
+  color: white;
+  font-size: 10px;
+}
+
+
+.footer .info {max-width: 300px;}
+
 @media (min-width: 470px) {
   .service .icon {
     float: left;
@@ -422,7 +447,10 @@ input:focus::-webkit-input-placeholder {
     margin-top: 0;
     float: right;
   }
+  
+  
 
+  .footer .email{clear:none; float:right;}
 }
 
 @media (min-width:768px) {
