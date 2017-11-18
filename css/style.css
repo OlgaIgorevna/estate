@@ -274,7 +274,9 @@
    margin-bottom: 20px;
  }
 
-
+.service .special{
+  padding-right: 0;
+}
 
 
 
@@ -460,11 +462,7 @@
  @media (min-width: 470px) {
    .service .icon {
      float: left;
-   }
-
-   .service .item {
-     width: 220px;
-   }
+   }   
 
    .service .info {
      float: left;
