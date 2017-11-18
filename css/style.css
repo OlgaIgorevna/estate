@@ -44,7 +44,7 @@
   float: left;
 }
 
-.contact {
+.header .contact {
   clear: both;
   float: left;
   margin-top: 10px;
@@ -297,9 +297,11 @@ input:focus::-webkit-input-placeholder {
    color: black;
   }
 
+/*
 .third .col-md-5 .content{
   padding: 30px 40px 0 30px;  
 }
+*/
 
 .third .col-md-5 .content .item{
   width: 200px;
@@ -337,8 +339,44 @@ input:focus::-webkit-input-placeholder {
 
 /**/
 
+.sprite img{
+  float:left;
+  margin: 0 5px;
+  width: 30px;
+}
 
+.contact-block .info {
+  max-width: 270px;
+}
 
+.contact-block .block-1 {
+  border-bottom: 1px solid #e5e5e5;
+  max-width: 270px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.contact-block .block-2 {
+  max-width: 270px;
+}
+
+.contact-block .telephone {font-weight: 450;}
+.contact-block .btn {
+  background: none;
+  border:none;
+  color: #3aabec;
+  float: left;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 350px;
+}
 
 @media (min-width: 470px) {
   .service .icon {
@@ -363,7 +401,7 @@ input:focus::-webkit-input-placeholder {
   }
   
   .third .col-md-5 .content{
-   width: 500px;
+   max-width: 500px;
     margin: 0 auto;
   }
   
@@ -375,7 +413,11 @@ input:focus::-webkit-input-placeholder {
 }
 
 @media (min-width: 544px) {
-  .contact {
+  .third .col-md-5 .content{
+  padding: 30px 40px 0 30px;  
+}
+
+ .header .contact {
     clear: none;
     margin-top: 0;
     float: right;
@@ -481,11 +523,17 @@ input:focus::-webkit-input-placeholder {
   .third {
     min-height: 1px;
     color: white;
-    height: 500px;
+    height: 471px;
   }
 
   
   
+}
+
+@media(min-width: 992px){
+  .map{
+    max-height: 280px;
+  }
 }
 
 @media (min-width: 1140px) {
