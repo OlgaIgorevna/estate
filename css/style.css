@@ -17,7 +17,8 @@
    font-family: CordaleRegular;
  }
 
- h1, h3 {
+ h1,
+ h3 {
    font-family: CordaleBold;
  }
 
@@ -211,12 +212,11 @@
  /*-----------------*/
 
  .container.service {
-
    padding-top: 30px;
  }
 
  .service {
-   font-size: 13px;
+   font-size: 15px;
  }
 
  .service .title {
@@ -224,7 +224,7 @@
  }
 
  .service .item {
-   width: 100px;
+   width: 140px;
  }
 
 
@@ -384,6 +384,11 @@
    width: 30px;
  }
 
+ .contact-block {
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
+
  .contact-block .info {
    max-width: 270px;
  }
@@ -449,7 +454,7 @@
 
  .footer .info {
    min-width: 290px;
-   max-width: 300px;
+
  }
 
  @media (min-width: 470px) {
@@ -458,7 +463,7 @@
    }
 
    .service .item {
-     width: 195px;
+     width: 205px;
    }
 
    .service .info {
@@ -604,15 +609,14 @@
      height: 471px;
    }
 
-
-
- }
-
- @media(min-width: 992px) {
    .map {
-     max-height: 280px;
+     max-height: 372px;
    }
+
+
+
  }
+
 
  @media (min-width: 1140px) {
    .first .content-form {
@@ -657,5 +661,18 @@
      font-size: 20px;
    }
 
+
+   .service {
+     font-size: 20px;
+   }
+   .service .item {
+     width: 250px;
+   }
+   .service h1 {
+     font-size: 45px;
+   }
+   .service .cost {
+     font-size: 13px;
+   }
 
  }
